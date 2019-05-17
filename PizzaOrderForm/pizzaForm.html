@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <link href="pizzaForm.css" rel="stylesheet">
+		<title>Papa Luigi's Pizza</title>
+	</head>
+	<body>
+    <header><h1>Papa Luigi's Pizza Order Form</h1></header>
+        
+    
+        <div id="tab-container" class="tab-container">
+            <ul class="etabs">
+                <li class="tab"><a href="#pizza">Choose your pizza!</a></li>
+                <li class="tab"><a href="#delivery">Delivery Info</a></li>
+                <li class="tab"><a href="#conf">Order Confirmation</a></li>
+            </ul>
+        
+        <!---Choice Tab--->
+            <div class="panel-container">
+        <!---Pizza Size--->
+                <div id="pizza">
+            <form action="conf">
+                  <fieldset>
+                <h3>Choose Your Size:</h3>
+                
+                    <div>
+                    <input name="size" type="radio" id="small">
+                    <label for="small">Small $7</label>
+                    </div>
+                    
+                     <div id="pizza">
+                    <div>
+                    <input name="size" type="radio" id="medium">
+                    <label for="medium">Medium $9</label>
+                    </div>
+                      </div>
+                         
+                     <div id="pizza">
+                    <div>
+                    <input name="size" type="radio" id="large">
+                    <label for="large">Large $12</label>
+                    </div>
+                    </div>
+            <!---Crust Choice--->
+                <h3>Choose Your Crust:</h3>
+                    <div>
+                    <input name="crust" type="radio" id="thin">
+                    <label for="thin">Thin Crust</label>
+                    </div>
+                    
+                    <div>
+                    <input name="crust" type="radio" id="pan">
+                    <label for="pan">Pan Style</label>
+                    </div>
+                         
+                    <div>
+                    <input name="crust" type="radio" id="gf">
+                    <label for="gf">Gluten Free</label>
+                    </div>
+                         
+            <!----Meat Choice--->
+               <h3>Choose Your Meat ($1.50 each):</h3>          
+                    <div>
+                    <input name="pepperoni" type="checkbox" id="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    
+                    <div>
+                    <input name="sausage" type="checkbox" id="sausage">
+                    <label for="sausage">Italian Sausage</label>
+                    </div>
+                         
+                    <div>
+                    <input name="bacon" type="checkbox" id="bacon">
+                    <label for="bacon">Bacon</label>
+                    </div>
+                    
+            <!----Veggie Choice----->
+                <h3>Choose Your Veggies ($1 each):</h3>
+                    <div>
+                    <input name="onion" type="checkbox" id="onion">
+                    <label for="onion">Onion</label>
+                    </div>
+                         
+                    <div>
+                    <input name="mushroom" type="checkbox" id="mushroom">
+                    <label for="mushroom">Mushrooms</label>
+                    </div>
+                         
+                    <div>
+                    <input name="olive" type="checkbox" id="olive">
+                    <label for="olive">Black Olives</label>
+                    </div>
+                         
+                       </fieldset>
+                      </form>
+                <!---submit button--->
+                      <button type="button" id="applyChoices">Make My Pizza!</button>       
+                         </div>
+            </div>
+        <!---Delivery Tab--->
+            <div id="delivery">
+        <form>
+              <fieldset>
+            <h3>Deliver to:</h3>
+                <label for="firstName">First Name</label>
+                <input name="firstName" type="textbox" id="firstName"> 
+                  
+                <label for="lastName">Last Name</label>
+                <input name="lastName" type="textbox" id="lastName">
+                <br><br>
+                  
+                <label for="street">Street Address</label>
+                <input name="street" type="textbox" id="street">
+                <br><br>
+                  
+                <label for="city">City</label>
+                <input name="city" type="textbox" id="city">
+                <br><br>
+                  
+                <label for="state">State</label>
+                <input name="state" type="textbox" id="state">
+                <br><br>
+                  
+                <label for="zip">Zip Code</label>
+                <input name="zip" type="textbox" id="zip">
+                <br><br> 
+                  
+               <button type="button" id="applyAddress">Submit</button>
+              </fieldset>
+           </form>
+                 </div>
+            
+    <!------------Confirmation Tab----------------->
+            <div id="conf">
+             
+                <h3>Confirmation</h3>
+                
+                <div>
+                 <div id="applyChoices">
+                     <b>Pizza Size:</b> <span id="size"></span><br><br>
+                     <b>Crust Choice:</b> <span id="crust"></span><br><br>
+                     <b>Meat:</b> <span id="meats"></span><br><br>
+                     <b>Veggies:</b> <span id="veggies"></span><br><br>
+                 </div>
+                    
+                    <div>
+                    <h3>Your Total is:</h3>
+                        SubTotal: $ <span id="finSub"></span><br><br>
+                        Tax: $ <span id="finTax"></span><br><br>
+                        Delivery Fee: $2<br><br>
+                        <b>Total: $ <span id="finTotal"></span></b><br><br>
+                    </div>
+                   
+                 <div id="applyAddress">
+                    Deliver To: <br>
+                    <span id="fName"></span>
+                    <span id="lName"></span><br><br>
+                    <span id="address"></span><br><br>
+                    <span id="cty"></span><br><br>
+                    <span id="st"></span><br><br>
+                    <span id="zp"></span>
+                      
+                 </div>
+                      
+            
+                </div>
+            </div>
+        </div> 
+    
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="jquery.easytabs.min.js"></script>
+        <script src="pizzaForm.js"></script>
+    </body>            
+	
+</html>

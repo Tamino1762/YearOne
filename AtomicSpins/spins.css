@@ -1,0 +1,338 @@
+html {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    color: red;
+    background-color: black;
+    border: solid red 3px;
+    background-image: url("Logo_Art.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    text-shadow: 2px 2px 5px white;
+    font-family: 'Permanent Marker', cursive;
+}
+h1{
+    letter-spacing: .15em
+}
+
+body {
+    background-color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.container {
+    box-shadow: 5px 5px 5px #666;
+}
+
+nav {
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+
+}
+
+nav li {
+    display: inline;
+
+}
+
+nav ul a :link {
+    color: #3f2860;
+}
+
+nav ul a :visited {
+    color: #497777;
+}
+
+nav ul a :hover {
+    color: #a26100;
+    border: inset 3px #333333;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border: outset 3px #cccccc;
+    padding: .5em;
+    margin-bottom: 1em;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    transition: 1s linear;
+    background-color: red;
+    color: black;
+    text-decoration: none;
+
+}
+
+footer {
+    color: red;
+    text-align: center;
+    padding-top: 10em;
+}
+
+.home {
+    color: white;
+    border: solid red 2px;
+    border: solid red 2px;
+    padding: 1em;
+    text-align: center;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 10em;
+    padding-right: 1em;
+    color: red;
+}
+
+input,
+textarea {
+    display: block;
+    margin-bottom: 2em;
+}
+
+button {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+p {
+    color: red;
+    text-align: center;
+}
+h2 {
+    color: red;
+    text-align: center;
+}
+
+h5 {
+    color: red;
+    text-align: center;
+}
+
+h6 {
+    color: red;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.video {
+    text-align: left;
+}
+
+.ny {
+    padding-top: 2em;
+}
+
+.con {
+    border: solid red 3px;
+}
+
+.asmerch {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+}
+
+#merchCon {
+    border: solid red 3px;
+}
+
+#showAddress {
+    display: inline-block;
+}
+
+td,
+th {
+    color: red;
+    text-align: center;
+}
+
+table {
+    border: solid white 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4em;
+}
+
+#pics {
+    position: relative;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    opacity: .25;
+    padding: 16em 10em 10em 10em;
+}
+
+#pics ul {
+    width: 300px;
+    list-style: none;
+}
+
+#pics li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#pics img {
+    border: 0;
+}
+
+#pics a {
+    text-decoration: none;
+    color: green;
+    font-style: italic;
+}
+
+#pics span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#pics a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    opacity: 1;
+}
+
+#video {
+    float: right;
+    padding-right: 7em;
+    padding-top: 7em
+}
+#vmedia {
+    display: none;
+}
+
+#music {
+    float: right;
+    color: red;
+    padding: 0 15em
+}
+
+#music a {
+    color: red;
+    text-decoration: none;
+    display: block;
+    padding-left: 6em;
+}
+
+.audio {
+    text-align: center;
+}
+#cPic {
+    float: left;
+    padding-bottom: 100em;
+}
+#contactForm {
+    float:right;
+    padding-right: 20em;
+}
+
+@media only screen and (max-width: 64em) {
+    figure {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        background-image: none;
+    }
+    h1 {
+        letter-spacing: .1em;
+    }
+     #cPic {
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 37.5em){
+    figure {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        background-image: none;
+    }
+    h1 {
+        letter-spacing: 0;
+    }
+     nav {
+        padding:0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border: solid #330000 2px;
+    }
+    nav a {
+        display: block;
+    }
+    #video {
+        display: none;
+    }
+    #pics span{
+        display: none;
+        
+    }
+    footer{
+        display: none;
+    }
+    #vmedia {
+         
+        color: red;
+        display: inline;
+        text-decoration: none;
+        text-align: center;
+    }
+    #music {
+        padding: 2em;
+    }
+     {
+        display: block;
+    }
+    input[type="button"] {
+        display: inline;
+    }
+    textarea {
+        float: left;
+        display: block;
+    }
+    button{
+        padding: 1em;
+    }
+    #cPic {
+        display: none;
+    }
+    #contactForm {
+        float: none;
+        padding: 0;
+    }
+}
+

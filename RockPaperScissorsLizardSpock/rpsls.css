@@ -1,0 +1,85 @@
+td {
+    background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+    border: solid #777 1px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    user-select: none;
+}
+td:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+table {
+    align-self: center;
+}
+header {
+    background-color: lightblue;
+    background-image: url(RPSTattoo.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    text-align: center;
+    padding: 5px;
+    border: solid 3px black;
+}
+#rock{
+    background-image: url(rock.jpg);
+    background-size: 100px 100px;
+    background-position: center;
+    text-align: bottom;
+    color: white;
+}
+#paper{
+    background-image: url(paper.jpg);
+    background-size: 100px 100px;
+    background-position: center;
+    text-align: bottom;
+    color: black;
+}
+#scissors{
+    background-image: url(scissors.jpg);
+    background-size: 100px 100px;
+    background-position: center;
+    text-align: bottom;
+    color: white;
+}
+#lizard{
+    background-image: url(lizard.jpg);
+    background-size: 100px 100px;
+    background-position: center;
+    text-align: bottom;
+    color: white;
+}
+#spock{
+    background-image: url(spock_star_trek_vulcan.jpg);
+    background-size: 100px 100px;
+    background-position: center;
+    text-align: bottom;
+    color: white;
+}
+button {
+    align-self: center;
+}
+h2 {
+    text-align: center;
+}
+span {
+    align-items: center;
+}
+div, p, h3, table {
+    max-width: 500px;
+    margin: auto;
+}
+iframe {
+    max-width: 500px;
+    margin: auto;
+    padding-left: 700px;
+}
+body {
+    background-color: #cccccc;
+    font-family: 'Comic Sans MS', cursive; 
+}
+footer {
+    text-align: center;
+}

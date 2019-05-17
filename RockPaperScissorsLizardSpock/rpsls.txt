@@ -1,0 +1,30 @@
+	var rock = 0;       
+	var paper = 1; 
+       var scissors = 2;
+       var lizard = 3;
+       var spock = 4;
+       var guess;
+
+
+//switch statement to enter user guess
+       switch (guess) {
+               
+           case rock: {
+               $('#play').html ("You chose rock!")
+           } break;
+           case 1:{
+               $('#play').html ("You chose paper!")
+           } break;
+           case 2: {
+               $('#play').html ("You chose scissors!")
+           } break;
+           case 3: {
+               $('#play').html ("You chose lizard!")
+           }break;
+           case 4:{
+               $('#play').html ("You chose spock!")
+           } break;
+            default: {
+                $('#play').html ("Please choose rock, paper, scissors, lizard or spock.")
+           }break;
+       }

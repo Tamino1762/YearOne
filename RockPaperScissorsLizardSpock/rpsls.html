@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bazinga!</title>
+    <link rel="stylesheet" href="rpsls.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+    </header>
+    <h2>Click a button to play!</h2>
+    <div></div>
+    <table>
+        <tr id="table" name="table">
+            <div><td class="guess" id="rock">Rock</td></div>
+            <div><td class="guess" id="paper">Paper</td></div>
+            <div><td class="guess" id="scissors">Scissors</td></div>
+            <div><td class="guess" id="lizard">Lizard</td></div>
+            <div><td class="guess" id="spock">Spock</td></div>
+        </tr>
+    </table>
+    
+    <!--show user input-->
+    <div>Round 1: <span id="play1"></span> <span id="npc1"></span></div>
+    <div>Round 2: <span id="play2"></span> <span id="npc2"></span></div>
+    <div>Round 3: <span id="play3"></span> <span id="npc3"></span></div><br>
+    
+    <div><span id="winLose"></span></div><br>
+    <!--rules with video-->
+    <p></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iSHPVCBsnLw?start=39" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p></p>
+    <h3>Rules</h3>
+    <p>As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."</p><br><br>
+    
+    <footer>Copyright&copy; 2018 Theresa Bollhagen</footer>
+    
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script src="rpsls.js"></script>
+</body>
+
+</html>
